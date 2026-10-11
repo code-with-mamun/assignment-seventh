@@ -1,33 +1,7 @@
-{"timestamp":"00:00:01.236","source":"Server","level":"LOG","message":"- Cache Components enabled"}
-{"timestamp":"00:00:01.237","source":"Server","level":"LOG","message":"- Partial Prefetching enabled"}
-{"timestamp":"00:00:01.237","source":"Server","level":"LOG","message":"- Experiments (use with caution):"}
-{"timestamp":"00:00:01.237","source":"Server","level":"LOG","message":"  ✓ agentFeedback"}
-{"timestamp":"00:00:01.237","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:03.665","source":"Server","level":"LOG","message":"  Turbopack has seen frequent file updates and is waiting for the filesystem to settle (0.5s elapsed so far; last modified: \"\\\\\\\\?\\\\C:\\\\Assignment-7th\\\\bazar-dor\\\\node_modules\\\\next\\\\compat\")."}
-{"timestamp":"00:00:05.887","source":"Server","level":"ERROR","message":"Turbopack build encountered 1 error:\n./src/app\nError: Could not find the Next.js package (next/package.json)\nResolved from: C:\\Assignment-7th\\bazar-dor\\src\\app\nFilesystem root used for resolution: C:\\Assignment-7th\\bazar-dor\n\nPossible causes:\n  - node_modules is being reorganized by a concurrent install (e.g. pnpm adding a package with a `next` peer dependency). This is transient and should clear once the install completes.\n  - node_modules/next was removed, renamed, or has a broken symlink.\n  - The workspace root is incorrect — see turbopack.root in the Next.js config docs for how to configure it.\n  - In a monorepo, the Next.js package may only exist in a directory above the closest directory containing a package manager lockfile. The workspace root is detected by locating the nearest package manager lockfile.\n  - Next.js is installed globally rather than as a project dependency. This is not supported; install it locally.\n\nNote: To ensure a hermetic build and a portable cache, files outside of the workspace root are not compiled.\n\nhttps://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory\n\n"}
-{"timestamp":"00:00:15.058","source":"Server","level":"LOG","message":"  Turbopack has seen frequent file updates and is waiting for the filesystem to settle (0.5s elapsed so far; last modified: \"\\\\\\\\?\\\\C:\\\\Assignment-7th\\\\bazar-dor\\\\node_modules\\\\argparse\\\\package.json\")."}
-{"timestamp":"00:00:17.708","source":"Server","level":"LOG","message":"  Turbopack has seen frequent file updates and is waiting for the filesystem to settle (0.5s elapsed so far; last modified: \"\\\\\\\\?\\\\C:\\\\Assignment-7th\\\\bazar-dor\\\\node_modules\\\\zod\\\\v4\\\\classic\\\\external.cjs\")."}
-{"timestamp":"00:00:18.707","source":"Server","level":"LOG","message":"  Turbopack has seen frequent file updates and is waiting for the filesystem to settle (1.5s elapsed so far; last modified: \"\\\\\\\\?\\\\C:\\\\Assignment-7th\\\\bazar-dor\\\\node_modules\\\\es-abstract\\\\2023\\\\BigInt\\\\lessThan.js\")."}
-{"timestamp":"00:00:20.707","source":"Server","level":"LOG","message":"  Turbopack has seen frequent file updates and is waiting for the filesystem to settle (3.5s elapsed so far; last modified: \"\\\\\\\\?\\\\C:\\\\Assignment-7th\\\\bazar-dor\\\\node_modules\\\\next\\\\dist\\\\esm\\\\server\\\\app-render\\\\instant-validation\\\\instant-samples.js\")."}
-{"timestamp":"00:00:24.714","source":"Server","level":"LOG","message":"  Turbopack has seen frequent file updates and is waiting for the filesystem to settle (7.5s elapsed so far; last modified: \"\\\\\\\\?\\\\C:\\\\Assignment-7th\\\\bazar-dor\\\\node_modules\\\\next\\\\script.js\")."}
-{"timestamp":"00:00:32.727","source":"Server","level":"LOG","message":"  Turbopack has seen frequent file updates and is waiting for the filesystem to settle (15.5s elapsed so far; last modified: \"\\\\\\\\?\\\\C:\\\\Assignment-7th\\\\bazar-dor\\\\node_modules\\\\next\\\\dist\\\\esm\\\\lib\\\\fs\\\\rename.js.map\")."}
-{"timestamp":"00:01:07.998","source":"Server","level":"LOG","message":"  Turbopack has seen frequent file updates and is waiting for the filesystem to settle (0.5s elapsed so far; last modified: \"\\\\\\\\?\\\\C:\\\\Assignment-7th\\\\bazar-dor\\\\node_modules\\\\next\\\\dist\\\\compiled\\\\react-dom\")."}
-{"timestamp":"00:01:10.491","source":"Server","level":"LOG","message":"○ Compiling / ..."}
-{"timestamp":"00:01:15.627","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:01:15.634","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:01:21.368","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
-{"timestamp":"00:01:21.378","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
-{"timestamp":"00:02:39.796","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
-{"timestamp":"00:03:26.498","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:03:28.252","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
-{"timestamp":"00:10:57.214","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
-{"timestamp":"00:10:57.219","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
-{"timestamp":"00:13:53.497","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
-{"timestamp":"00:13:53.499","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
-{"timestamp":"00:15:14.371","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
-{"timestamp":"00:15:14.372","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
-{"timestamp":"00:15:31.279","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
-{"timestamp":"00:15:31.280","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
-{"timestamp":"00:23:16.253","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
-{"timestamp":"00:24:01.984","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:24:04.902","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
+{"timestamp":"00:00:02.486","source":"Server","level":"LOG","message":"- Cache Components enabled"}
+{"timestamp":"00:00:02.486","source":"Server","level":"LOG","message":"- Partial Prefetching enabled"}
+{"timestamp":"00:00:02.486","source":"Server","level":"LOG","message":"- Experiments (use with caution):"}
+{"timestamp":"00:00:02.487","source":"Server","level":"LOG","message":"  ✓ agentFeedback"}
+{"timestamp":"00:00:02.487","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:04.351","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:05.664","source":"Server","level":"ERROR","message":"⨯ Error: BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env"}
