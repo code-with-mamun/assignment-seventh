@@ -1,0 +1,42 @@
+#1:"$Sreact.fragment"
+2:"/_next/static/chunks/1tq6ppe__m8m-.js"
+3:"/_next/static/chunks/032n75vppn8a2.js"
+4:"/_next/static/chunks/0zk4hn_031l7i.js"
+5:I[5766,["$2","$3","$4"],"Toaster"]
+6:"$Sreact.suspense"
+7:I[3114,["$2","$3","$4"],"default"]
+8:I[27702,["$2","$3","$4"],"default"]
+9:I[39756,["$2","$3","$4"],"default"]
+a:I[37457,["$2","$3","$4"],"default"]
+b:I[22016,["$2","$3","$4"],""]
+e:"/_next/static/chunks/3coeynw10-spt.js"
+f:I[5500,["$2","$3","$4","$e"],"Image"]
+10:I[65918,["$2","$3","$4","$e"],"default"]
+11:I[32311,["$2","$3","$4","$e"],"default"]
+12:I[69714,["$2","$3","$4","$e"],"default"]
+13:I[97367,["$2","$3","$4"],"OutletBoundary"]
+16:"ViewportBoundary"
+17:I[97367,["$2","$3","$4"],"$16"]
+19:"MetadataBoundary"
+1a:I[97367,["$2","$3","$4"],"$19"]
+1d:I[68027,["$2","$3","$4"],"default",1]
+:HL["/_next/static/chunks/31nx71fi5qju5.css","style"]
+c:X
+15:X
+d:[["children",{"s":"__PAGE__","h":514,"d":{"r":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-gray-50 pb-12","children":[["$","section",null,{"className":"bg-white px-4 py-6 sm:px-6 lg:px-8","children":["$","div",null,{"className":"mx-auto max-w-7xl","children":["$","div",null,{"className":"grid min-h-[350px] overflow-hidden rounded-2xl bg-gradient-to-r from-green-50 to-green-100 lg:grid-cols-2","children":[["$","div",null,{"className":"flex flex-col justify-center px-6 py-10 sm:px-10 lg:px-12","children":[["$","p",null,{"className":"mb-4 w-fit rounded-full bg-green-100 px-3 py-1 text-sm font-semibold text-green-700","children":"🌿 আজকের বাজার দর"}],["$","h1",null,{"className":"text-3xl font-extrabold leading-tight text-gray-900 sm:text-4xl lg:text-5xl","children":["আপনার প্রতিদিনের",["$","span",null,{"className":"block text-green-600","children":"সঠিক বাজার দর"}]]}],["$","p",null,{"className":"mt-4 max-w-lg text-sm leading-7 text-gray-600 sm:text-base","children":"দেশের বিভিন্ন বাজারের সবজি, ফল, মাছ, মাংস, ডাল, তেলসহ নিত্যপ্রয়োজনীয় পণ্যের সর্বশেষ দাম জানুন এক জায়গায়।"}],["$","div",null,{"className":"mt-6","children":["$","a",null,{"href":"#সব-পণ্য","className":"inline-flex items-center gap-2 rounded-lg bg-green-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-green-700","children":["বাজার দর দেখুন",["$","span",null,{"children":"→"}]]}]}]]}],["$","div",null,{"className":"flex min-h-[280px] items-end justify-center lg:min-h-[350px]","children":["$","$Lf",null,{"src":"/bazar-hero.png","alt":"বাজারের তাজা সবজি","width":650,"height":450,"priority":true,"className":"h-auto w-full max-w-[600px] object-contain"}]}]]}]}]}],["$","$L10",null,{}],["$","$L11",null,{}],["$","$L12",null,{}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/3coeynw10-spt.js","async":true,"nonce":"$undefined"}]],["$","$L13",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]]}],"p":true,"v":"$15"}}]]
+1c:X
+1e:X
+1f:X
+0:{"P":null,"c":["",""],"q":"","i":false,"t":{"t":{"s":"","h":530,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/31nx71fi5qju5.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/1tq6ppe__m8m-.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/032n75vppn8a2.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/0zk4hn_031l7i.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"bn","children":["$","body",null,{"children":[["$","$L5",null,{"position":"top-right"}],["$","$6",null,{"fallback":null,"children":["$","$L7",null,{}]}],["$","$L8",null,{}],["$","$L9",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$La",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"flex min-h-[70vh] flex-col items-center justify-center px-4 text-center","children":[" ",["$","p",null,{"className":"text-7xl font-extrabold text-emerald-600","children":"404 "}],["$","h1",null,{"className":"mt-5 text-2xl font-bold text-gray-900 sm:text-3xl","children":"পেজটি খুঁজে পাওয়া যায়নি!"}],["$","p",null,{"className":"mt-3 max-w-md text-gray-500","children":"দুঃখিত, আপনি যে পেজটি খুঁজছেন সেটি পাওয়া যায়নি। পেজের লিংকটি পরীক্ষা করে আবার চেষ্টা করুন।"}],["$","$Lb",null,{"href":"/","className":"mt-6 rounded-xl bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700","children":"← হোম পেজে ফিরে যান"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","footer",null,{"className":"border-t border-gray-200 bg-white px-4 py-5","children":["$","div",null,{"className":"mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 text-xs text-gray-500 sm:flex-row","children":[["$","p",null,{"children":"বাজার দর — প্রতিদিনের বাজার দর সহজে জানুন"}],["$","p",null,{"children":"সর্বশেষ আপডেট: আজকের বাজারের সর্বশেষ তথ্য"}]]}]}]]}]}]]}],"p":true,"v":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L17",null,{"children":"$L18"}],["$","$L1a",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$6",null,{"name":"Next.Metadata","children":"$L1b"}]}],null]}],null]}],"p":true,"v":"$1c"}},"m":"$undefined","G":["$1d",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/31nx71fi5qju5.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$1e","s":"$1f","a":"$@20","l":"$undefined","p":"$undefined","d":"$undefined","b":"0DbJW9eJFZiTnFJqIn_4N","u":"$@21"}
+1f:300
+18:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+22:I[27201,["$2","$3","$4"],"IconMark"]
+14:null
+1b:[["$","title","0",{"children":"বাজার দর - নিত্যপ্রয়োজনীয় দ্রব্যের দৈনিক বাজার মূল্য"}],["$","meta","1",{"name":"description","content":"আজকের চাল, ডাল, তেল, সবজি ও অন্যান্য নিত্যপ্রয়োজনীয় পণ্যের সঠিক বাজার দর জানুন।"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L22","3",{}]]
+1f:C
+1c:C
+1e:C
+15:C
+c:C
+21:false
+20:null
