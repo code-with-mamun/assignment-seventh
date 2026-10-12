@@ -40,10 +40,13 @@ export default function SignupPage() {
                 return;
             }
 
-            if (data) {
-                toast.success("অ্যাকাউন্ট সফলভাবে তৈরি হয়েছে!");
-                router.push("/signin");
+            if (!data) {
+                setError("অ্যাকাউন্ট তৈরি করা যায়নি। আবার চেষ্টা করুন।");
+                return;
             }
+
+            toast.success("অ্যাকাউন্ট সফলভাবে তৈরি হয়েছে!");
+            router.push("/signin");
         } catch (err) {
             setError("কিছু সমস্যা হয়েছে। আবার চেষ্টা করুন।");
         } finally {
