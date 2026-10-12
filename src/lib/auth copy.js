@@ -9,14 +9,14 @@ try {
   // ignore if not supported in runtime
 }
 
-let rawUri =
-  process.env.BETTER_AUTH_MONGODB_URI ||
-  process.env.MONGODB_URI;
+let rawUri = process.env.BETTER_AUTH_MONGODB_URI || process.env.MONGODB_URI;
 
 if (!rawUri) {
-  throw new Error("BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env");
+  throw new Error(
+    "BETTER_AUTH_MONGODB_URI or MONGODB_URI is not defined in .env",
+  );
 }
-
+// here i will check if the uri is mongodb+srv:// and if so, replace it with the standard replica set uri
 // Windows DNS resolver fails SRV lookup for mongodb+srv:// with querySrv ECONNREFUSED.
 // If using the default cluster, fallback to the direct standard replica set URI.
 const standardReplicaUri =
@@ -32,20 +32,14 @@ export const database = client.db("bazardor");
 
 const socialProviders = {};
 
-if (
-  process.env.GOOGLE_CLIENT_ID &&
-  process.env.GOOGLE_CLIENT_SECRET
-) {
+if (process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET) {
   socialProviders.google = {
     clientId: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
   };
 }
 
-if (
-  process.env.GITHUB_CLIENT_ID &&
-  process.env.GITHUB_CLIENT_SECRET
-) {
+if (process.env.GITHUB_CLIENT_ID && process.env.GITHUB_CLIENT_SECRET) {
   socialProviders.github = {
     clientId: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
