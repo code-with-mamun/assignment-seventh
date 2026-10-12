@@ -1,158 +1,165 @@
-# 🛒 BazarDor — বাজার দর
+# BazarDor — বাজার দর
 
-BazarDor is a responsive web application that helps users check the daily prices of essential market products in Bangladesh. Users can explore product categories, compare price changes, view product details, and access their profile through secure authentication.
+BazarDor is a Bangladesh-focused market price web application. Browse daily prices for essential products, explore categories, compare price changes, and manage your account in a Bengali-friendly interface.
 
-## ✨ Features
+## Project Links
 
-- View daily prices of essential market products.
-- Browse products by category.
-- Compare today's prices with previous prices.
-- View product details and market information.
-- User registration and login with email and password.
-- Google and GitHub social authentication.
-- User profile page with GitHub avatar.
-- Responsive design for mobile, tablet, and desktop.
-- Bangla interface and Bangla number formatting.
-- Dynamic product and category data from an API.
+- **Live application:** [bazar-dor-3yqy.vercel.app](https://bazar-dor-3yqy.vercel.app/)
+- **GitHub repository:** [code-with-mamun/assignment-seventh](https://github.com/code-with-mamun/assignment-seventh)
 
-## 🛠️ Technology Stack
+## Features
 
-- Next.js
-- React
-- Tailwind CSS
-- JavaScript (ES6+)
-- Better Auth
-- MongoDB
-- Lucide React
-- React Hot Toast
-- REST API
-- Vercel
+- Browse products and market prices by category.
+- View product details and compare price changes.
+- See price risers, fallers, and a scrolling price ticker.
+- Create an account or sign in with email and password.
+- Sign in with Google or GitHub when OAuth credentials are configured.
+- View and manage your profile, including a linked GitHub avatar.
+- Use a responsive interface with Bengali labels and number formatting.
 
-## 🚀 Getting Started
+## Technology Stack
 
-### 1. Clone the Repository
+| Technology | Usage |
+| --- | --- |
+| Next.js 16 (App Router) | Application framework and API routes |
+| React 19 | User interface |
+| Tailwind CSS 4 | Styling |
+| JavaScript | Application language |
+| Better Auth | Email/password and social authentication |
+| MongoDB Node.js Driver | Authentication data storage |
+| REST API | Product and category data |
+| Lucide React | Icons |
+| React Hot Toast | Notifications |
+| Vercel | Deployment |
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm
+- A MongoDB connection string
+- Google and/or GitHub OAuth credentials if you want to enable social sign-in
+
+### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd bazardor-project-assijment-7
+git clone https://github.com/code-with-mamun/assignment-seventh.git
+cd assignment-seventh
 ```
 
-Replace `YOUR_GITHUB_REPOSITORY_URL` with your actual GitHub repository URL.
-
-### 2. Install Dependencies
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Configure Environment Variables
+### 3. Configure environment variables
 
-Create a `.env` file and configure the environment variables required by your project.
+Create a `.env.local` file in the project root. You can use `.env.example` as a reference:
 
 ```env
 BETTER_AUTH_MONGODB_URI=your_mongodb_connection_string
-BETTER_AUTH_SECRET=your_auth_secret
+BETTER_AUTH_SECRET=your_long_random_secret
 BETTER_AUTH_URL=http://localhost:3000
 NEXT_PUBLIC_BETTER_AUTH_URL=http://localhost:3000
 
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-
-GITHUB_CLIENT_ID=your_github_client_id
-GITHUB_CLIENT_SECRET=your_github_client_secret
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
 ```
 
-Use the exact variable names required by your source code. Never upload your `.env` file or private credentials to GitHub.
+The MongoDB connection string and Better Auth secret are required. Google and GitHub credentials are optional; configure both variables for a provider to enable its sign-in option. The application also accepts `MONGODB_URI` as a fallback for `BETTER_AUTH_MONGODB_URI`.
 
-### 4. Run the Development Server
+Keep credentials private. Do not commit `.env`, `.env.local`, or any file containing real secrets.
+
+### 4. Start the development server
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000).
 
-### 5. Build for Production
+## Available Scripts
 
-```bash
-npm run build
-```
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the local development server |
+| `npm run build` | Build the application for production |
+| `npm run start` | Start the production server |
+| `npm run lint` | Run ESLint |
 
-## 🔌 API Information
+## Data and API
 
-**API Base URL:**
+Product and category data are provided by the external BazarDor API at `https://api.abcz.workers.dev/api/bazardor`. The application uses these endpoints:
 
-`https://api.abcz.workers.dev/api/bazardor`
+| Endpoint | Description |
+| --- | --- |
+| `/products` | Get products |
+| `/products?category=<slug>` | Filter products by category |
+| `/products/<id>` | Get a product by ID |
+| `/categories` | Get categories |
+| `/categories/<slug>` | Get category details |
 
-Available endpoints include:
+The Next.js application also provides `/api/products`, which retrieves products from the external API and supports the optional `category` query parameter.
 
-- `/products` — Get all products.
-- `/products?category=chal` — Get products by category.
-- `/products/1` — Get a product by ID.
-- `/categories` — Get all categories.
-- `/categories/chal` — Get category details.
+## Authentication Setup
 
-API availability depends on the external service.
-
-## 🔐 Authentication
-
-BazarDor uses Better Auth for authentication.
-
-Supported authentication methods:
-
-- Email and password
-- Google OAuth
-- GitHub OAuth
-
-For production deployment, configure the correct OAuth callback URLs using your actual domain:
+Better Auth handles email/password authentication and, when configured, Google and GitHub sign-in. For the deployed application, set both `BETTER_AUTH_URL` and `NEXT_PUBLIC_BETTER_AUTH_URL` to:
 
 ```text
-https://YOUR_DOMAIN/api/auth/callback/google
-https://YOUR_DOMAIN/api/auth/callback/github
+https://bazar-dor-3yqy.vercel.app
 ```
 
-Replace `YOUR_DOMAIN` with your deployed website's domain and configure the same URLs in the Google and GitHub developer dashboards.
+Configure the following callback URLs in the corresponding OAuth provider settings:
 
-## 🌐 Deployment
+```text
+https://bazar-dor-3yqy.vercel.app/api/auth/callback/google
+https://bazar-dor-3yqy.vercel.app/api/auth/callback/github
+```
 
-The project can be deployed using Vercel.
+For local OAuth testing, add the equivalent `http://localhost:3000/api/auth/callback/<provider>` URL to each provider's configuration.
 
-1. Push the source code to GitHub.
-2. Import the repository into Vercel.
-3. Configure the required environment variables.
-4. Update the Google and GitHub OAuth settings.
-5. Deploy the application.
-6. Test product pages, authentication, and profile functionality.
+## Deployment
 
-## 📁 Project Structure
+The live application is deployed on Vercel. To deploy your own copy:
+
+1. Import the GitHub repository into Vercel.
+2. Add the required MongoDB and Better Auth environment variables.
+3. Add OAuth credentials and update callback URLs if enabling social sign-in.
+4. Deploy and verify product browsing and authentication.
+
+## Project Structure
 
 ```text
 src/
-└── app/
-    ├── api/
-    │   ├── auth/
-    │   ├── products/
-    │   └── profile/
-    │       └── github-avatar/
-    ├── category/
-    ├── product/
-    ├── profile/
-    ├── signin/
-    ├── signup/
-    └── components/
+├── app/
+│   ├── api/
+│   │   ├── auth/[...all]/
+│   │   ├── products/
+│   │   └── profile/github-avatar/
+│   ├── category/[slug]/
+│   ├── components/
+│   ├── product/[slug]/
+│   ├── profile/
+│   ├── signin/
+│   ├── signup/
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+└── lib/
+    ├── api.jsx
+    ├── auth-client.js
+    └── auth.js
 ```
 
-## 🔒 Security
+## Security
 
-- Keep database credentials and OAuth secrets private.
-- Never commit `.env` or `.env.local` files.
-- Use HTTPS for production.
-- Ensure OAuth callback URLs match the deployed domain.
+- Keep MongoDB credentials, the Better Auth secret, and OAuth secrets out of source control.
+- Use HTTPS for production deployments.
+- Make sure OAuth callback URLs match the deployed domain.
 
-## 👩‍💻 Author
+## License
 
-Developed as a web development project using Next.js, React, MongoDB, and Better Auth.
-
-## 📄 License
-
-This project was created for educational and assignment purposes.
+Created for educational and assignment purposes.
